@@ -69,7 +69,8 @@ namespace Klubtagság
             Member utoljaraBelepett = members[0];
             foreach (var member in members)
             {
-                if (member.Entry > utoljaraBelepett.Entry)
+                
+                if (DateTime.Parse(member.Entry) > DateTime.Parse(utoljaraBelepett.Entry))
                 {
                     utoljaraBelepett = member;
                 }
